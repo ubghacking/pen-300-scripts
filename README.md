@@ -30,15 +30,34 @@ This script performs the basic situational awareness checks, so I do not forget 
 18. Checks for other intersting files on disk
     a. Excludes `C:\Users`, `C:\Windows`, `C:\PerfLogs`
 
+# Bssic OSEP Linux Enum
+
+This script performs (you guessed it) basic enumeration tasks on a Linux machine:
+
+1. Checks for ansible
+2. Checks for ansible hosts
+3. Locates ansible playbooks
+4. Checks for passwords in various log file locations
+5. Checks if jfrog is installed
+6. Checks for jfrog artifactory and console logs
+7. Checks for access.backup
+8. Checks for ssh key files
+9. Checks for ssh_config files that contain ControlMaster or ControlPath
+10. Checks for any socket files
+11. Checks for running processes with SSH_AUTH_SOCK
+12. Checks for .ssh files in `/home` directories
+
 # Venom-Generator
 
-This script will create all your payloads that you used in the course. 
+[!] THese are not going to bypass defender as is! This just jumpstarts your exam, with vanilla shellcode you must take and encode/encrypt/whatever to bypass defender. [!]
+
+This script will create all your payloads that you used in the course.
 
 [!] Warning!
-<br />These were all tested in a homelab, and not inside the course labs. If you're not getting a callback, not my fault.
+<br />These were all tested in a homelab, and not inside the course labs! If you're not getting a callback, not my fault.
 
 1. 32-bit reverse_https and reverse_tcp vbapplication, csharp payloads
-2. 64 bit reverse_https and reverse_https raw, csharp, powershell, vbapplication, exe, dll, elf and msi payloads
+2. 64 bit reverse_https and reverse_https raw, csharp, powershell, vbapplication, exe, dll, elf (no reverse_https, as that payload doesn't exist for ELF) and msi payloads
 3. A lonely, single reverse_tcp_ssl python payload (That I can't recall where it was used in the course, but it's in my notes, so it's in the script)
 
 ```
