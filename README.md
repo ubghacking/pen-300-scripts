@@ -29,3 +29,11 @@ This script performs the basic situational awareness checks, so I do not forget 
     <br />Type `C:\Users\Path\To\Flag.txt`
 18. Checks for other intersting files on disk
     a. Excludes `C:\Users`, `C:\Windows`, `C:\PerfLogs`
+
+# Venom-Generator
+
+This script will create all your payloads that you used in the course, including:
+
+1. 32-bit reverse_https and reverse_tcp vbapplication, csharp payloads
+2. 64 bit reverse_https and reverse_https raw, csharp, powershell, vbapplication, exe, dll, elf and msi payloads
+3. A lonely, single reverse_tcp_ssl python payload (That I can't recall where it was used in the course, but it's in my notes, so it's in the script)
