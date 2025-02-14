@@ -1,10 +1,10 @@
-A collection of simple scripts written through the course.
+A collection of simple scripts written through the OffSec's PEN300 course for public consumption.
 
 # Footholder
 
 This script performs the basic situational awareness checks, so I do not forget to perform them. It will:
 
-1. Print to console tje current domain
+1. Print to console the current domain
 2. Print to console the current domain logon servers
 3. Check for any Antivirus Products
 4. Check who you are, with `whoami /all`
@@ -23,9 +23,9 @@ This script performs the basic situational awareness checks, so I do not forget 
     a. If the directory exists, print to console SSH Keys, RSA Leys, Public Keys, authorized_keys
 17. Check for flags (local.txt, proof.txt, ssecret.txt)
     a. If found, prints to console, with a reminder for commands:
-    whoami
-    hostname
-    ipconfig
-    Type `C:\Users\Path\To\Flag.txt`
+    <br />whoami
+    <br />hostname
+    <br />ipconfig
+    <br />Type `C:\Users\Path\To\Flag.txt`
 18. Checks for other intersting files on disk
     a. Excludes `C:\Users`, `C:\Windows`, `C:\PerfLogs`
