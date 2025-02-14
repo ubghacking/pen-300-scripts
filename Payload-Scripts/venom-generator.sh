@@ -3,7 +3,7 @@
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <IP> <PORT>"
     echo ""
-    echo "This script will take those two arguments, and generate a suite of msfvenom payloads to use"
+    echo "This script will take two arguments, and generate a suite of msfvenom payloads to use"
     exit 1
 fi
 
