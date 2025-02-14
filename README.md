@@ -32,8 +32,45 @@ This script performs the basic situational awareness checks, so I do not forget 
 
 # Venom-Generator
 
-This script will create all your payloads that you used in the course, including:
+This script will create all your payloads that you used in the course. 
+
+[!] Warning!
+    These were all tested in a homelab, and not inside the course labs. If you're not getting a callback, not my fault.
 
 1. 32-bit reverse_https and reverse_tcp vbapplication, csharp payloads
 2. 64 bit reverse_https and reverse_https raw, csharp, powershell, vbapplication, exe, dll, elf and msi payloads
 3. A lonely, single reverse_tcp_ssl python payload (That I can't recall where it was used in the course, but it's in my notes, so it's in the script)
+
+```
+.
+├── csharp
+│   ├── reverse_https-x32-csharp.txt
+│   ├── reverse_https-x64-csharp.txt
+│   ├── reverse_tcp-x32-csharp.txt
+│   └── reverse_tcp-x64-csharp.txt
+├── dll
+│   ├── reverse_https-x64-dll.dll
+│   └── reverse_tcp-x64-dll.dll
+├── elf
+│   └── reverse_tcp-x64-elf
+├── exe
+│   ├── reverse_https-x64-exe.exe
+│   └── reverse_tcp-x64.exe
+├── msi
+│   ├── reverse_https-x64-msi.msi
+│   └── reverse_tcp-x64-msi.msi
+├── powershell
+│   ├── reverse_https-x64-ps1.ps1
+│   └── reverse_tcp-x64-ps1.ps1
+├── python
+│   └── reverse_tcp_ssl.py
+├── raw
+│   ├── reverse_https-x64-raw.bin
+│   └── reverse_tcp-x64-raw.bin
+├── vbapplication
+│   ├── reverse_https-x32-vpapplication.txt
+│   ├── reverse_https-x64-vbapplication.txt
+│   ├── reverse_tcp-x32-vpapplication.txt
+│   └── reverse_tcp-x64-vbapplication.txt
+└── venom-generator.sh
+```
