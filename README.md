@@ -1,8 +1,8 @@
 A collection of simple scripts written through the OffSec's PEN300 course for public consumption.
 
-# Footholder
+# Footholder - Basic Windows Enum Script
 
-This script performs the basic situational awareness checks, so I do not forget to perform them. It will:
+This script performs the basic situational awareness checks for Windows machines:
 
 1. Print to console the current domain
 2. Print to console the current domain logon servers
