@@ -26,6 +26,6 @@ This script performs the basic situational awareness checks, so I do not forget 
     whoami
     hostname
     ipconfig
-    Type <PATH\TO\FLAG>
+    Type `C:\Users\Path\To\Flag.txt`
 18. Checks for other intersting files on disk
     a. Excludes `C:\Users`, `C:\Windows`, `C:\PerfLogs`
