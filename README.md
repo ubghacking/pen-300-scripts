@@ -49,7 +49,7 @@ This script performs (you guessed it) basic enumeration tasks on a Linux machine
 
 # Venom-Generator
 
-[!] THese are not going to bypass defender as is! This just jumpstarts your exam, with vanilla shellcode you must take and encode/encrypt/whatever to bypass defender. [!]
+[!] These are not going to bypass defender as is! This just jumpstarts your exam, with vanilla shellcode you must take and encode/encrypt/whatever to bypass defender.
 
 This script will create all your payloads that you used in the course.
 
