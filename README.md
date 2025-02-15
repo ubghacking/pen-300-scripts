@@ -6,29 +6,36 @@ This script performs the basic situational awareness checks for Windows machines
 
 1. Print to console the current domain
 2. Print to console the current domain logon servers
-3. Check for any Antivirus Products
-4. Check who you are, with `whoami /all`
-5. Check if you are a local administrator on the box
-6. Print to console the local administrator groups
-7. Print to console the attached network adapters, to find if you are dual homed
-8. Print to console any PowerShell history
-9. Check for any connected shared drives
-10. Check for AppLocker Policies
-11. Print to console installed software (32 bit and 64 bit, categorized)
-12. Print to console "Program Files" and "Program Files (x86)" to check for anything interesting within those directories.
-13. PrivEsc - Check for any unquoted service paths
-14. PrivEsc - Check for AlwaysInstalledElevated
-15. Check for interesting files in `C:\Users`
-16. Check for any .ssh directories in `C:\Users\<USERNAME>\.ssh`
+3. Print to console the system information
+4. Check if Defender is installed, and any other installed antivirus products
+5. Check who you are, with `whoami /all`
+6. Check if you are a local administrator on the box
+7. Print to console the local administrator group
+8. Print to console the attached network adapters, to find if you are dual homed
+9. Print to console network configuration
+10. Prints to console open ports and services
+11. Print to console any PowerShell history
+12. Print to console contents of C:\ drive
+13. Check for any connected shared drives
+14. Check for AppLocker Policies
+15. Print to console installed software (32 bit and 64 bit, categorized)
+16. Print to console "Program Files" and "Program Files (x86)" to check for anything interesting within those directories.
+17. PrivEsc - Check for any unquoted service paths
+18. PrivEsc - Check for AlwaysInstalledElevated
+19. Check for interesting files in `C:\Users`
+20. Check for any .ssh directories in `C:\Users\<USERNAME>\.ssh`
     a. If the directory exists, print to console SSH Keys, RSA Leys, Public Keys, authorized_keys
-17. Check for flags (local.txt, proof.txt, ssecret.txt)
+21. Check for flags (local.txt, proof.txt, ssecret.txt)
     a. If found, prints to console, with a reminder for commands:
     <br />whoami
     <br />hostname
     <br />ipconfig
     <br />Type `C:\Users\Path\To\Flag.txt`
-18. Checks for other intersting files on disk
+22. Checks for other intersting files on disk
     a. Excludes `C:\Users`, `C:\Windows`, `C:\PerfLogs`
+23. Prints to console Domain Groups
+24. Prints to console Domain Users
+25. Prints to console Domain Group Members (All the domain groups, noisy!)
 
 # Bssic OSEP Linux Enum
 
