@@ -69,33 +69,31 @@ This script will create all your payloads that you used in the course.
 
 ```
 ├── csharp
-│   ├── reverse_https-x32-csharp.txt
-│   ├── reverse_https-x64-csharp.txt
-│   ├── reverse_tcp-x32-csharp.txt
-│   └── reverse_tcp-x64-csharp.txt
+│   ├── reverse_https-x32-csharp.txt		- TESTED, passed (in homelab)
+│   ├── reverse_https-x64-csharp.txt		- TESTED, passed (in homelab)
+│   ├── reverse_tcp-x32-csharp.txt		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64-csharp.txt		- TESTED, passed (in homelab)
 ├── dll
-│   ├── reverse_https-x64-dll.dll
-│   └── reverse_tcp-x64-dll.dll
+│   ├── reverse_https-x64-dll.dll		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64-dll.dll			- TESTED, passed (in homelab)
 ├── elf
-│   └── reverse_tcp-x64-elf
+│   └── reverse_tcp-x64-elf			- TESTED, passed (in homelab)
 ├── exe
-│   ├── reverse_https-x64-exe.exe
-│   └── reverse_tcp-x64.exe
+│   ├── reverse_https-x64-exe.exe		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64.exe			- TESTED, passed (in homelab)
 ├── msi
-│   ├── reverse_https-x64-msi.msi
-│   └── reverse_tcp-x64-msi.msi
+│   ├── reverse_https-x64-msi.msi		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64-msi.msi			- TESTED, passed (in homelab)
 ├── powershell
-│   ├── reverse_https-x64-ps1.ps1
-│   └── reverse_tcp-x64-ps1.ps1
-├── python
-│   └── reverse_tcp_ssl.py
+│   ├── reverse_https-x64-ps1.ps1		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64-ps1.ps1			- TESTED, passed (in homelab)
 ├── raw
-│   ├── reverse_https-x64-raw.bin
-│   └── reverse_tcp-x64-raw.bin
+│   ├── reverse_https-x64-raw.bin		- TESTED, passed (in homelab)
+│   └── reverse_tcp-x64-raw.bin			- TESTED, passed (in homelab)
 ├── vbapplication
-│   ├── reverse_https-x32-vpapplication.txt
-│   ├── reverse_https-x64-vbapplication.txt
-│   ├── reverse_tcp-x32-vpapplication.txt
-│   └── reverse_tcp-x64-vbapplication.txt
-└── venom-generator.sh
+    ├── reverse_https-x32-vpapplication.txt	- TESTED, passed (in homelab)
+    ├── reverse_https-x64-vbapplication.txt	- TESTED, passed (in homelab)
+    ├── reverse_tcp-x32-vpapplication.txt	- TESTED, passed (in homelab)
+    └── reverse_tcp-x64-vbapplication.txt	- TESTED, passed (in homelab)
+
 ```
